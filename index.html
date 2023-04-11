@@ -46,20 +46,9 @@
         var resultadoL = document.getElementById("resultadoL");
         var resultado;
 
-        if(dolar.value)
+        if(dolar.value && euro.value && libra)
         {
-            resultado = real.value / dolar.value;
-            resultadoD.value = resultado;
-        }
-        else if(euro.value)
-        {
-            resultado = real.value / euro.value;
-            resultadoE.value = resultado;
-        }
-        else
-        {
-            resultado = real.value / libra.value;
-            resultadoL.value = resultado;
+            resultadoD.value = real.value / dolar.value;
         }
 
 
