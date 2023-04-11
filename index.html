@@ -24,7 +24,7 @@
             <label for="exampleInputEmail1" class="form-label">Libra Esterlina</label>
             <input type="text" class="form-control" id="libra" placeholder="Digite o valor do câmbio em libra...">
             <br>
-            <button type="button" class="btn btn-outline-dark" >Dark</button>
+            <button type="button" class="btn btn-outline-dark" onclick="converter()" >Converter</button>
             <br><br>
             <input type="text" class="form-control" id="resultadoD" placeholder="Resultado em dólar..." disabled>
             <br><br>
@@ -44,10 +44,22 @@
         var resultadoD = document.getElementById("resultadoD")
         var resultadoE = document.getElementById("resultadoE")
         var resultadoL = document.getElementById("resultadoL")
+        var resultado
 
         if(dolar.value)
         {
-            
+            resultado = real.value / dolar.value;
+            resultadoD.value = resultado;
+        }
+        else if(euro.value)
+        {
+            resultado = real.value / euro.value;
+            resultadoE.value = resultado;
+        }
+        else
+        {
+            resultado = real.value / libra.value;
+            resultadoL.value = resultado;
         }
     }
 </script>
