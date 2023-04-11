@@ -14,22 +14,41 @@
 
             <br><br>
             <label for="exampleInputEmail1" class="form-label">Real</label>
-            <input type="text" class="form-control" id="entrada" placeholder="Digite o valor...">
+            <input type="text" class="form-control" id="real" placeholder="Digite o valor...">
 
             <br><br>
             <label for="exampleInputEmail1" class="form-label">Dólar</label>
-            <input type="text" class="form-control" id="entrada" placeholder="Digite o valor do câmbio em dólar...">
+            <input type="text" class="form-control" id="dolar" placeholder="Digite o valor do câmbio em dólar...">
             <label for="exampleInputEmail1" class="form-label">Euro</label>
-            <input type="text" class="form-control" id="entrada" placeholder="Digite o valor do câmbio em euro...">
+            <input type="text" class="form-control" id="euro" placeholder="Digite o valor do câmbio em euro...">
             <label for="exampleInputEmail1" class="form-label">Libra Esterlina</label>
-            <input type="text" class="form-control" id="entrada" placeholder="Digite o valor do câmbio em libra...">
+            <input type="text" class="form-control" id="libra" placeholder="Digite o valor do câmbio em libra...">
+            <br>
+            <button type="button" class="btn btn-outline-dark" >Dark</button>
             <br><br>
-            <input type="text" class="form-control" id="resultado" placeholder="Resultado em dólar...">
+            <input type="text" class="form-control" id="resultadoD" placeholder="Resultado em dólar..." disabled>
             <br><br>
-            <input type="text" class="form-control" id="resultado" placeholder="Resultado em euro...">
+            <input type="text" class="form-control" id="resultadoE" placeholder="Resultado em euro..." disabled>
             <br><br>
-            <input type="text" class="form-control" id="resultado" placeholder="Resultado em libra...">           
+            <input type="text" class="form-control" id="resultadoL" placeholder="Resultado em libra..." disabled>           
         </div>
     </div>
 </body>
+<script>
+    function converter()
+    {
+        var real = document.getElementById("real");
+        var dolar = document.getElementById("dolar");
+        var euro = document.getElementById("euro");
+        var libra = document.getElementById("libra");
+        var resultadoD = document.getElementById("resultadoD")
+        var resultadoE = document.getElementById("resultadoE")
+        var resultadoL = document.getElementById("resultadoL")
+
+        if(dolar.value)
+        {
+            
+        }
+    }
+</script>
 </html>
