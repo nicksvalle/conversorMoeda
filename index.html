@@ -14,10 +14,6 @@
         color: aliceblue;
         height: 10000px;
     }
-    input{
-        
-        ;
-    }
 </style>
 <body>
     <div class="container text-center">
@@ -25,24 +21,29 @@
           <div class="col-sm">
 
             <br><br>
-            <label for="exampleInputEmail1" class="form-label">Real</label>
+            <h3>Real</h3>
             <input type="text" class="form-control" id="real" placeholder="Digite o valor...">
 
             <br><br>
-            <label for="exampleInputEmail1" class="form-label">Dólar</label>
-            <input type="text" class="form-control" id="dolar" placeholder="Digite o valor do câmbio em dólar...">
-            <label for="exampleInputEmail1" class="form-label">Euro</label>
-            <input type="text" class="form-control" id="euro" placeholder="Digite o valor do câmbio em euro...">
-            <label for="exampleInputEmail1" class="form-label">Libra Esterlina</label>
-            <input type="text" class="form-control" id="libra" placeholder="Digite o valor do câmbio em libra...">
+            <h3>Coloque o cambio em Dólar</h3>
             <br>
-            <button type="button" class="btn btn-outline-dark" onclick="converter()" >Converter</button>
+            <input style="padding: 10px; border-radius: 5px; border: none; outline: none;" type="text" class="form-control" id="dolar" placeholder="Digite o valor do câmbio em dólar...">
+            <h3>Coloque o câmbio em Euro</h3>
+            <br>
+            <input style="padding: 10px; border-radius: 5px; border: none; outline: none;" type="text" class="form-control" id="euro" placeholder="Digite o valor do câmbio em euro...">
+            <h3>Coloque o cambio em Libra</h3>
+            <br>
+            <input style="padding: 10px; border-radius: 5px; border: none; outline: none;" type="text" class="form-control" id="libra" placeholder="Digite o valor do câmbio em libra...">
             <br><br>
-            <input type="text" class="form-control" id="resultadoD" placeholder="Resultado em dólar..." disabled>
+            <button type="button" class="btn btn-outline-light" onclick="converter()" >Converter</button>
             <br><br>
-            <input style="padding: 12px 20px; height: 10 px; width: 40%;" type="text" class="form-control" id="resultadoE" placeholder="Resultado em euro..." disabled>
+            <h3>Resultado(s)</h3>
+            <br>
+            <input style="padding: 10px; border-radius: 5px; border: none; outline: none;" type="text" class="form-control" id="resultadoD" placeholder="Resultado em dólar..." disabled>
             <br><br>
-            <input type="text" class="form-control" id="resultadoL" placeholder="Resultado em libra..." disabled>           
+            <input style="padding: 10px; border-radius: 5px; border: none; outline: none;" type="text" class="form-control" id="resultadoE" placeholder="Resultado em euro..." disabled>
+            <br><br>
+            <input style="padding: 10px; border-radius: 5px; border: none; outline: none;" type="text" class="form-control" id="resultadoL" placeholder="Resultado em libra..." disabled>           
         </div>
     </div>
 </body>
